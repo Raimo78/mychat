@@ -61,10 +61,18 @@ color:white;
 			<p>
 				<span><?php echo $row['name']; ?> :</span>
 				<?php echo $row['message']; ?>
-				<?php echo $row["created_on"]; ?>
 				
 			</p>
 		</div>
+ 
+<?php
+
+$ts=time();
+
+echo date('F j &\nb\sp;  &\nb\sp; <\s\p\a\n>H:i<\/\s\p\a\n>', $ts);
+
+?>
+
 <?php
 		}
 	}
